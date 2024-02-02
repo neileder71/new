@@ -1,6 +1,172 @@
-.body {
-    text-align: center;
-    color: aqua;
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(334deg, #ff0000, #e77b7b, #ff0000);
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
+}
+.form-control {
+    box-shadow: none;
+    border-radius: 4px;        
+    border-color: #dfe3e8;
+}
+.navbar {
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid #dfe3e8;
+    border-radius: 0;
+}
+
+
+.logo {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+
+.fa {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.navbar .navbar-brand {
+    font-size: 20px;
+    padding-left: 0;
+    padding-right: 50px;
+}
+.navbar .navbar-brand b {
+    color: #ff0000;
+  font-family: cursive;     
+}
+.navbar a, .navbar a:active {
+    color: #999;
+    background: transparent;
+}
+.navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
+    color: #ff0000 !important;
+}
+.navbar .navbar-nav > a.active, .navbar .navbar-nav.show > a {
+    color: #ff0000 !important;
+    background: transparent !important;
+}
+
+
+.navbar .form-inline .input-group-btn {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.navbar .form-inline i {
+    font-size: 16px;
+}
+.navbar .form-inline .btn {
+    border-radius: 2px;
+    color: #fff;
+    border-color: #ee9292;
+    background: #ee9292;
+    outline: none;
+}
+.navbar .form-inline .btn:hover, .navbar .form-inline .btn:focus {
+    border-color: #d82222;
+    background: #c62929;
+}
+.navbar .search-form {
+    display: inline-block;
+}
+.navbar .search-form .btn {
+    margin-left: 4px;
+}
+.navbar .search-form .form-control {
+    border-radius: 2px;
+}
+.navbar .login-form .input-group {
+    margin-right: 4px;
+    float: left;
+}
+.navbar .login-form .form-control {
+    max-width: 158px;
+    border-radius: 0 2px 2px 0;
+}       
+
+
+.navbar .register-form .input-group {
+    margin-right: 4px;
+    float: left;
+}
+
+
+.navbar .register-form .form-control {
+    margin-right: 4px;
+    float: left;
+}
+
+
+.navbar .navbar-right .dropdown-toggle::after {
+    display: none;
+}
+.navbar .dropdown-menu {
+    font-size: 14px;
+    border-radius: 1px;
+    border-color: #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .dropdown-menu a {
+    padding: 6px 50px;
+}
+.navbar .login-dropdown .dropdown-menu {
+    width: 565px;
     padding: 30px;
-    font-style: italic;
+    left: auto;
+    right: 0;        
+}
+.navbar .login-dropdown .dropdown-toggle::after {
+    display: none;
+}
+@media (min-width: 1200px){
+    .search-form .input-group {
+        width: 300px;
+        margin-left: 30px;
+    }
+}
+@media (max-width: 768px){
+    .navbar .dropdown-menu {
+        width: 100%;
+        background: transparent;
+        padding: 10px 20px;
+    }
+    .navbar .input-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .navbar .input-group .form-control {
+        max-width: none;    
+    color: #ff0000;     
+    }
+    .navbar .login-form .btn {
+        width: 100%;
+    color: #ff0000;
+    }
+}
+
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
